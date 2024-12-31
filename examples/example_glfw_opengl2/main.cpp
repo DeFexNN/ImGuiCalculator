@@ -328,6 +328,8 @@ int main(int, char**)
             if (ImGui::Button("+/-", ImVec2(buttonWidth, height / 9))) {
                 if (secondnum == 0) {
                     firstnum *= -1;
+                    if (num[0] != '-')num[0] = '-';
+                    else num[0] = ' ';
                 }
                 else {
                     if (num[0] != '-')num[0] = '-';
